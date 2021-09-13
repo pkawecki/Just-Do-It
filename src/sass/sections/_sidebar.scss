@@ -1,86 +1,99 @@
 @media only screen and (max-width: 550px) {
-    .lower-menu-wrapper {
-        display: none;
-    }
+  .lower-menu-wrapper {
+    display: none;
+  }
 }
 
 #sidebar {
-    display: contents;
-    >* {
-        background: black;
-    }
+  display: contents;
+
+  >* {
+    background: black;
+  }
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .top-menu-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .logo-image {
-        padding: 16px 0;
-        padding-left: 20px;
-    }
-    .hamburger-image {
-        padding-right: 15px;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo-image {
+    padding: 16px 0;
+    padding-left: 20px;
+  }
+
+  .hamburger-image {
+    padding-right: 15px;
+  }
 }
 
 .lower-menu-wrapper {
-    height: 100vh;
-    margin-top: -.4rem;
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        text-decoration: none;
+  height: 100vh;
+  margin-top: -.4rem;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-decoration: none;
+  }
+
+  li {
+    min-width: 180px;
+    line-height: 40px;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #888888;
+
+    * {
+      margin-left: 10px;
     }
-    li {
-        min-width: 180px;
-        line-height: 40px;
-        position: relative;
+
+    a {
+      color: inherit;
+
+      :hover {
+        text-decoration: none;
+      }
+    }
+
+    img {
+      vertical-align: sub;
+      width: 20px;
+      height: 20px;
+      filter: $gray-filter;
+      /* apply gray filter to icon */
+    }
+
+    ::before {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height: 100%;
+      background: #F58220;
+      top: 0;
+      margin-right: 13px;
+      display: none;
+    }
+
+    &:hover {
+      color: white;
+
+      img {
+        filter: $white-filter
+        /* apply white filter */
+      }
+
+      ::before {
         display: block;
-        text-decoration: none;
-        color: #888888;
-        * {
-            margin-left: 10px;
-        }
-        a {
-            color: inherit;
-             :hover {
-                text-decoration: none;
-            }
-        }
-        img {
-            vertical-align: sub;
-            width: 20px;
-            height: 20px;
-            filter: $gray-filter;
-            /* apply gray filter to icon */
-        }
-         ::before {
-            position: absolute;
-            content: "";
-            display: inline-block;
-            width: 5px;
-            height: 100%;
-            background: #F58220;
-            top: 0;
-            margin-right: 13px;
-            display: none;
-        }
-        &:hover {
-            color: white;
-            img {
-                filter: $white-filter
-                /* apply white filter */
-            }
-             ::before {
-                display: block;
-            }
-        }
+      }
     }
+  }
 }
