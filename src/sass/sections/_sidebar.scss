@@ -1,36 +1,32 @@
-@media only screen and (max-width: 550px){
-    .lower-menu-wrapper{
-      display: none;
+@media only screen and (max-width: 550px) {
+    .lower-menu-wrapper {
+        display: none;
     }
 }
 
-#sidebar{
+#sidebar {
     display: contents;
-
     >* {
         background: black;
     }
-
-}
-a{
-  text-decoration: none;
 }
 
-.top-menu-wrapper{
+a {
+    text-decoration: none;
+}
+
+.top-menu-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
-    
-    .logo-image{
+    justify-content: space-between;
+    .logo-image {
         padding: 16px 0;
         padding-left: 20px;
     }
-
     .hamburger-image {
         padding-right: 15px;
     }
 }
-
 
 .lower-menu-wrapper {
     height: 100vh;
@@ -42,33 +38,30 @@ a{
         height: 100%;
         text-decoration: none;
     }
-    li  {
+    li {
         min-width: 180px;
         line-height: 40px;
         position: relative;
         display: block;
         text-decoration: none;
         color: #888888;
-
-        *{
-        margin-left: 10px;
+        * {
+            margin-left: 10px;
         }
-        a{
+        a {
             color: inherit;
-            :hover{
+             :hover {
                 text-decoration: none;
             }
         }
-        img{
+        img {
             vertical-align: sub;
             width: 20px;
             height: 20px;
-            filter: invert(63%) sepia(1%) 
-            saturate(933%) hue-rotate(327deg)
-             brightness(86%) contrast(88%);
-            /* apply grey filter to icon */
+            filter: $gray-filter;
+            /* apply gray filter to icon */
         }
-        ::before{
+         ::before {
             position: absolute;
             content: "";
             display: inline-block;
@@ -76,23 +69,18 @@ a{
             height: 100%;
             background: #F58220;
             top: 0;
-            margin-right: 13px ;
+            margin-right: 13px;
             display: none;
         }
         &:hover {
             color: white;
-
-            img{
-                filter: invert(100%) sepia(92%) 
-                saturate(0%) hue-rotate(323deg) 
-                brightness(108%) contrast(111%); 
+            img {
+                filter: $white-filter
                 /* apply white filter */
             }
-            ::before{
+             ::before {
                 display: block;
             }
         }
-    }   
+    }
 }
-
-

@@ -1,37 +1,29 @@
-.topbar{
+.topbar {
     display: flex;
     justify-content: flex-end;
-    /*! border: 1px sold #e3e3e3; */
-    border: black;
-    border: 1px solid black;
-
+    border: 1px solid;
+    max-height: 70px;
     .topbar-element {
         border-left: 1px solid black;
         /*! text-decoration: none; */
         padding: 18px 3px;
-
-        img{
+        img {
             /*! width: 14px; */
             height: 19px;
             padding-left: 20px;
             padding-right: 20px;
             vertical-align: middle;
         }
-
-        .small-arrow{
-            height: 14px;
+        .small-arrow {
+            height: 10px;
         }
         a {
             text-decoration: none;
             color: darkgrey;
         }
-
         .user-name {
             font-size: 0.75rem;
             padding-right: 10px;
         }
-    }   
+    }
 }
-
-
-

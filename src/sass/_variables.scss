@@ -1,4 +1,5 @@
 /* Colors */
+
 $paragraph-color: #969da5;
 $main-color: #dce3eb;
 $main-light-color: #f6f8fa;
@@ -6,10 +7,21 @@ $background-light-color: #fff;
 $brand-main-color: #fd8b20;
 $main-dark-color: #1e272e;
 $link-color: #669ac2;
+$onhover-link-color: #F1F3F3;
 
 /* Font sizes */
+
 $paragraph-font-size: 16px;
 
 /* Fonts */
-$brand-font: 'Damion', cursive; 
-$paragraph-font: 'Roboto', sans-serif;
+
+$brand-font: 'Damion',
+cursive;
+$paragraph-font: 'Roboto',
+sans-serif;
+
+/*Filters */
+
+$white-filter: invert(100%) sepia(92%) saturate(0%) hue-rotate(323deg) brightness(108%) contrast(111%);
+$gray-filter: invert(63%) sepia(1%) saturate(933%) hue-rotate(327deg) brightness(86%) contrast(88%);
+$brand-main-color-filter: invert(56%) sepia(98%) saturate(1025%) hue-rotate(344deg) brightness(100%) contrast(99%);

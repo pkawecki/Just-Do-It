@@ -1,0 +1,14 @@
+.foldable-menu {
+    height: 260px;
+    position: absolute;
+    top: 54px;
+    background: black;
+    right: 16px;
+    display: none;
+}
+
+@media only screen and (max-width: 550px) {
+    .active {
+        display: block;
+    }
+}
