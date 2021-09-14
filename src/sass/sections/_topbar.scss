@@ -1,34 +1,66 @@
 .topbar {
-  display: flex;
-  justify-content: flex-end;
-  border: 1px solid;
-  max-height: 70px;
-
-  .topbar-element {
-    border-left: 1px solid black;
-    /*! text-decoration: none; */
-    padding: 18px 3px;
-
-    img {
-      /*! width: 14px; */
-      height: 19px;
-      padding-left: 20px;
-      padding-right: 20px;
-      vertical-align: middle;
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid;
+    max-height: 70px;
+    .topbar-element {
+        border-left: 1px solid black;
+        /*! text-decoration: none; */
+        padding: 18px 3px;
+        img {
+            /*! width: 14px; */
+            height: 19px;
+            padding-left: 20px;
+            padding-right: 20px;
+            vertical-align: middle;
+        }
+        .small-arrow {
+            height: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: darkgrey;
+        }
+        .user-name {
+            font-size: 0.75rem;
+            padding-right: 10px;
+        }
     }
+}
 
-    .small-arrow {
-      height: 10px;
+@media only screen and(max-width: 550px) {
+    .top-menu-wrapper {
+        position: fixed;
+        right: 15px;
+        left: 15px;
     }
-
-    a {
-      text-decoration: none;
-      color: darkgrey;
+    .topbar {
+        position: fixed;
+        bottom: 0;
+        height: 60px;
+        left: 15px;
+        right: 15px;
+        background: white;
+        flex-grow: 1;
+        .topbar-element {
+            flex-grow: 1;
+            img {
+                padding-left: 2%;
+                padding-right: 2%;
+            }
+        }
+        .wallet {
+            display: flex;
+            >* {
+                flex-grow: 1;
+            }
+        }
+        .notification,
+        .quit {
+            display: flex;
+            >* {
+                margin: 0 auto;
+            }
+        }
     }
-
-    .user-name {
-      font-size: 0.75rem;
-      padding-right: 10px;
-    }
-  }
 }
